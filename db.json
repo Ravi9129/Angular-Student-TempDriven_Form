@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "name": "sdfgh",
+      "rollNumber": "61",
+      "address": "dfgh",
+      "percentage": 234,
+      "id": 1
+    },
+    {
+      "name": "vishal",
+      "rollNumber": "sdw445",
+      "address": "asdfg",
+      "percentage": 3,
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
