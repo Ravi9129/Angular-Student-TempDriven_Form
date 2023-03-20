@@ -12,7 +12,7 @@ import { StudentService } from './student.service';
 export class AppComponent {
   title = 'studentdashboard';
 
-  studentDetails = null as any;
+  studentDetails:any;
   studentToUpdate = {
     id:['',Validators.required],
     name:['',Validators.required],
@@ -32,11 +32,12 @@ export class AppComponent {
 
   
   register(registerForm: NgForm) {
-    this.studentService.registerStudent(registerForm.value).subscribe(
+    this.studentService.registerStudent(registerForm).subscribe(
       (resp) => {
+        alert("Data Succesfully added")
         console.log(resp);
-        registerForm.reset();
         this.getStudentsDetails();
+        registerForm.reset();
       },
       (err) => {
         console.log(err);
