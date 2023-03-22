@@ -82,6 +82,7 @@ export class AppComponent {
     this.studentService.updateStudents(this.studentToUpdate,this.studentToUpdate.id).subscribe(
       (resp) => {
         console.log(resp);
+        this.getStudentsDetails()
       },
       (err) => {
         console.log(err);

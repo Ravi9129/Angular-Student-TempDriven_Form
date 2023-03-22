@@ -74,7 +74,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form #updateForm="ngForm" (ngSubmit)="updateStudent()">
+        <form #updateForm="ngForm">
           <div class="form-group">
             <label for="rollNumber">Student Rollnumber :</label>
             <input type="text"  #rollNumber [(ngModel)]="studentToUpdate.rollNumber" name="rollNumber" id="rollNumber"
@@ -96,7 +96,7 @@
               class="form-control" placeholder="Student Percentage">
           </div>
           <div class="form-group">
-            <button type="submit" value="Update" class="btn btn-primary w-100" data-dismiss="modal" aria-label="Close">Update</button>
+            <button type="submit" value="Update" class="btn btn-primary w-100" data-dismiss="modal" aria-label="Close" (click)="updateStudent()">Update</button>
             <!-- <input type="submit" value="Update" class="btn btn-primary w-100"> -->
           </div>
         </form>
